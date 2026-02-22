@@ -1,0 +1,16 @@
+spring:
+  main:
+    banner-mode: off
+  datasource:
+    url: ${SPRING_DATASOURCE_URL}
+    username: ${SPRING_DATASOURCE_USERNAME}
+    password: ${SPRING_DATASOURCE_PASSWORD}
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    open-in-view: false
+logging:
+  level:
+    org.atmosphere.cpr: warn
+    com.vaadin.flow.spring.SpringInstantiator: warn
+    org.hibernate.orm.core: warn
