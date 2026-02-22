@@ -1,0 +1,3 @@
+logging:
+  level:
+    org.hibernate.orm.connections.pooling: warn

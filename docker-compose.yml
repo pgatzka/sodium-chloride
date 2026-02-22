@@ -1,0 +1,11 @@
+services:
+  database:
+    image: postgres:18
+    container_name: sodium-chloride-database
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: sodium-chloride
+      POSTGRES_USER: sodium-chloride
+      POSTGRES_PASSWORD: sodium-chloride
+    restart: always
